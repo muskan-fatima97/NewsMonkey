@@ -17,6 +17,9 @@ body {
   color: white !important;
   font-size: 18px;
 }
+.nav-link:hover{
+  color: orangered !important;
+}
 .navbar-brand{
   color: black !important;
   background-color: white;
