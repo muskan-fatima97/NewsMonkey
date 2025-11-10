@@ -7,7 +7,9 @@ function Technology() {
         getNewsArticles();
     }, [])
     async function getNewsArticles() {
-        const url = "https://saurav.tech/NewsAPI/everything/cnn.json";
+        // const url = "https://saurav.tech/NewsAPI/everything/cnn.json";
+        const API_KEY = "590d242396dc448b855b9c558b0cbbc9";
+    const url = `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=${API_KEY}`;
         const response = await fetch(url);
         const data = await response.json();
         setNewsArticles(data.articles);

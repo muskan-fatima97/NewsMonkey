@@ -7,7 +7,8 @@ function Entertainment() {
         getNewsArticles();
     }, [])
     async function getNewsArticles() {
-        const url = "https://saurav.tech/NewsAPI/everything/cnn.json";
+        // const url = "https://saurav.tech/NewsAPI/everything/cnn.json";
+        const url= "https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=590d242396dc448b855b9c558b0cbbc9";
         const response = await fetch(url);
         const data = await response.json();
         setNewsArticles(data.articles);
