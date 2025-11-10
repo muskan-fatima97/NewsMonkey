@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import "../App.css";
-// import ''
+
 function Nation() {
     const [newsArticles, setNewsArticles] = useState([]);
     useEffect(() => {
         getNewsArticles();
     }, [])
     async function getNewsArticles() {
-        const url = "https://saurav.tech/NewsAPI/top-headlines/category/health/in.json";
+        const url = "https://saurav.tech/NewsAPI/everything/cnn.json";
         const response = await fetch(url);
         const data = await response.json();
         setNewsArticles(data.articles);

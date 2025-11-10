@@ -7,7 +7,7 @@ function Entertainment() {
         getNewsArticles();
     }, [])
     async function getNewsArticles() {
-        const url = "https://saurav.tech/NewsAPI/top-headlines/category/health/in.json";
+        const url = "https://saurav.tech/NewsAPI/everything/cnn.json";
         const response = await fetch(url);
         const data = await response.json();
         setNewsArticles(data.articles);

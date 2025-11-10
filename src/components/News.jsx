@@ -21,7 +21,7 @@ const News = ({ category }) => {
       case "technology": return <Technology />;
       case "nation": return <Nation/>;
       case "contact": return <Contact/>;
-      case "about":return <About/>
+      case "about": return <About/>
       default: return <Home />;
     }
   };
